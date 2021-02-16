@@ -32,7 +32,7 @@ Overwrite file `fruits.md` with 5 lines: `Apple`, `Mango`, `Orange`, `Pear`, `Ki
 
 `git diff`
 
-Compare state of the file system with previous **commit**
+Compare state of the file system with the previous **commit**
 
 `echo "Red\n\nBlue\nOrange\n" > colors.md`
 
@@ -40,7 +40,7 @@ Overwrite file `colors.md` with 3 lines: `Red`, `Blue`, `Orange`
 
 `git diff`
 
-Compare state of the file system with previous **commit**
+Compare state of the file system with the previous **commit**
 
 `git commit -am "update fruits and colors"`
 
@@ -54,7 +54,7 @@ Overwrite file `fruits.md` with 2 lines: `Cherry`, `Strawberry`
 
 `git diff`
 
-Compare state of the file system with previous **commit**
+Compare state of the file system with the previous **commit**
 
 `git commit -am "reset list of fruits"`
 
