@@ -2,47 +2,45 @@
 
 ## How to unstage a file?
 
-`$ git reset`
+`git reset`
 
 ## How to delete a file?
 
-`$ git rm <file>`
-
-`$ git rm --cached <file>`
+`git rm <file>`
 
 ## How to undo a commit locally?
 
-`$ git reset --hard HEAD~1`
+`git reset --hard HEAD~1`
 
 Current `HEAD` becomes `HEAD~1` (previous commit)
 
 ## How to undo a commit remotely?
 
-`$ git reset --hard HEAD~1`
+`git reset --hard HEAD~1`
 
 Current `HEAD` becomes `HEAD~1` (previous commit)
 
-`$ git push -f`
+`git push -f`
 
 Always be **extra** careful when force pushing
 
 ## How to create a branch from a commit?
 
-`$ git checkout -b <branch> <commit>`
+`git checkout -b <branch> <commit>`
 
 ## How to rest to a particular commit?
 
-`$ git reset --soft (maintain local structure)`
+`git reset --soft` (maintain local file system state)
 
-`$ git reset --hard (overwrite)`
+`git reset --hard` (update both repository and file system)
 
 ## How to reset a particular file to a snapshot?
 
-`$ git reset <commit> <file>`
+`git reset <commit> <file>`
 
 ## How to delete a branch locally?
 
-`$ git branch -d <branch>`
+`git branch -d <branch>`
 
 ## How to delete a branch remotely?
 
