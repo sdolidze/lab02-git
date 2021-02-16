@@ -3,8 +3,8 @@
 ## Index
 
 - [Level 00 - Commit](/docs/level00.md)
-- [Level 01 - Versioning](/docs/level01.md)
-- [Level 02 - Branch (+ Stash)](/docs/level02.md)
+- [Level 01 - Diff](/docs/level01.md)
+- [Level 02 - Branch](/docs/level02.md)
 - [Level 04 - Merge](/docs/level03.md)
 - [Level 03 - Remote](/docs/level04.md)
 - [Level 05 -](/docs/level05.md)
