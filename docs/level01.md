@@ -1,8 +1,8 @@
 # Level 01 - Diff
 
-## Step 1
-
 HINT: run `git status` after each **git** command
+
+## Step 1
 
 `echo "Apple\nOrange\nPear\n" > fruits.md`
 
