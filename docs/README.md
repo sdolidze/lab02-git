@@ -3,7 +3,7 @@
 ## Index
 
 - Level 00 - Commit
-- Level 01 - ???
+- Level 01 - Versioning
 - Level 02 - Branch (+ Stash)
 - Level 04 - Merge
 - Level 03 - Remote

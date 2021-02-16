@@ -1,148 +1,93 @@
-# Level 00 - Commit
+# Level 01 - Versioning
 
 ## Step 1
 
-`$ git init`
+HINT: run `git status` after each **git** command
 
-File system has `.git` folder in the current directory
+`echo "Apple\nOrange\nPear\n" > fruits.md`
 
-Git is initialized, but empty
+Create file `fruits.md` with 3 lines: `Apple`, `Orange`, `Pear`
 
-### FS
+`echo "Red\nGreen\nBlue\n" > colors.md`
 
-```
+Create file `colors.md` with 3 lines: `Red`, `Green`, `Blue`
 
-```
+`git init`
 
-### Git Staging
+Initialize an empty git repository
 
-```
+`git add --all`
 
-```
+Add all **untracked** files to **staging**
 
-### Git Repository
+`git commit -m "initial commit"`
 
-```
-
-```
+Commit all **staged** files
 
 ## Step 2
 
-`$ echo "Hello World" > README.md`
+`echo "Apple\nMango\nOrange\nPear\nKiwi\n" > fruits.md`
 
-README.md is an **untracked** file for git (does not exist for git)
+Overwrite file `fruits.md` with 5 lines: `Apple`, `Mango`, `Orange`, `Pear`, `Kiwi`
 
-`$ git status`
+`git diff`
 
-### FS
+Compare state of the file system with previous **commit**
 
-```
-- README.md
-```
+`echo "Red\n\nBlue\nOrange\n" > colors.md`
 
-### Git Staging
+Overwrite file `colors.md` with 3 lines: `Red`, `Blue`, `Orange`
 
-```
+`git diff`
 
-```
+Compare state of the file system with previous **commit**
 
-### Git Repository
+`git commit -am "update fruits and colors"`
 
-```
-
-```
+Stage all **tracked** files (`-a`) and **commit** them
 
 ## Step 3
 
-`$ git add README.md`
+`echo "Cherry\nStrawberry\n" > fruits.md`
 
-README.md file is **staged**, but not **committed**
+Overwrite file `fruits.md` with 2 lines: `Cherry`, `Strawberry`
 
-`$ git status`
+`git diff`
 
-All **staged** changes will be part of the next **commit**
+Compare state of the file system with previous **commit**
 
-### FS
+`git commit -am "reset list of fruits"`
 
-```
-- README.md
-```
+Stage all **tracked** files (`-a`) and **commit** them
 
-### Git Staging
+`git diff HEAD:fruits.md HEAD~2:fruits.md`
 
-```
-- README.md
-```
-
-### Git Repository
-
-```
-
-```
+Compare current state of `fruits.md` with the state 2 commits ago
 
 ## Step 4
 
-`$ git commit -m "initial commit"`
+`rm fruits.md`
 
-README.md file is now **committed**, you can always go back in time to see this version.
+Delete `fruits.md` file
 
-All **commits** are always saved locally on your computer.
+`git commit -am "remove fruits"`
 
-### FS
+Stage changes and commit them
 
-```
-- README.md
-```
+`git checkout HEAD~1 fruits.md`
 
-### Git Staging
-
-```
-
-```
-
-### Git Repository
-
-```
-+ initial commit
-  - README.md
-```
+Restore state of `fruits.md` from previous commit
 
 ## Step 5
 
-`$ echo "const x = 5;" > index.js`
+`mv fruits.md super-fruits.md`
 
-Creating file named `index.js`
+Rename `fruits.md` to `super-fruits.md`
 
-`$ git add index.js`
+`git add --all`
 
-You have to **stage** a file until you can commit it.
+Stage all changes
 
-`$ git commit -m "add index file"`
+`git commit -m "rename fruits"`
 
-index.js file is now **committed** with a unique **commit hash**. You can always go back in time to see this version.
-
-`$ git status`
-
-All **commits** are always saved locally on your computer.
-
-### FS
-
-```
-- README.md
-- index.js
-```
-
-### Git Staging
-
-```
-
-```
-
-### Git Repository
-
-```
-+ initial commit
-  - README.md
-+ add index file
-  - index.js
-```
+Commit all staged files
