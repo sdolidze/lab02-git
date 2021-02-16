@@ -82,8 +82,6 @@ All **staged** changes will be part of the next **commit**
 
 ## Step 4
 
-`$ git add index.js`
-
 `$ git commit -m "initial commit"`
 
 README.md file is now **committed**, you can always go back in time to see this version.
@@ -111,13 +109,17 @@ All **commits** are always saved locally on your computer.
 
 ## Step 5
 
+`$ echo "const x = 5;" > index.js`
+
+Creating file named `index.js`
+
 `$ git add index.js`
 
 You have to **stage** a file until you can commit it.
 
 `$ git commit -m "add index file"`
 
-index.js file is now **committed** with a unique **hash**. You can always go back in time to see this version.
+index.js file is now **committed** with a unique **commit hash**. You can always go back in time to see this version.
 
 `$ git status`
 
