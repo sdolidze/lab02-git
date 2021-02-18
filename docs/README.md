@@ -11,8 +11,10 @@
 
 ## References
 
-https://git-scm.com/docs
+[Git Docs](https://git-scm.com/docs)
 
 [Git Flow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
+
 [Merge vs Rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
 [Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
