@@ -1,4 +1,4 @@
-# Lab 03 - Git
+# Lab 02 - Git
 
 ## Index
 
