@@ -6,8 +6,6 @@
 - [Level 01 - Diff](/docs/level01.md)
 - [Level 02 - Branch](/docs/level02.md)
 - [Level 03 - Merge](/docs/level03.md)
-- [Level 04 - Remote](/docs/level04.md)
-- [Level 05 - Questions](/docs/level09.md)
 
 ## References
 
