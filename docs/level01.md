@@ -34,7 +34,7 @@ Overwrite file `fruits.md` with 5 lines: `Apple`, `Mango`, `Orange`, `Pear`, `Ki
 
 Compare state of the file system with the previous **commit**
 
-`echo "Red\n\nBlue\nOrange\n" > colors.md`
+`echo "Red\nBlue\nOrange\n" > colors.md`
 
 Overwrite file `colors.md` with 3 lines: `Red`, `Blue`, `Orange`
 
@@ -77,6 +77,14 @@ Stage changes and commit them
 `git checkout HEAD~1 fruits.md`
 
 Restore state of `fruits.md` from previous commit
+
+`git add --all`
+
+Stage all changes
+
+`git commit -am "restore old version of fruit"`
+
+Commit file
 
 ## Step 5
 
